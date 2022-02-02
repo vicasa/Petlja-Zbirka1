@@ -7,7 +7,7 @@ Ako imamo POZITIVAN broj x i PRIRODAN broj n, i pitamo se za koji POZITIVAN broj
 vazi da kad se pomnozi sam sa sobom n puta dobije se x (tj. nase pitanje je x=?^n).
 
 Takav broj y uvek postoji i jedinstven je. On se naziva n-ti koren broja x.
-Primetimo da ako je n=2 onda se radi o obiznom korenu.
+Primetimo da ako je n=2 onda se radi o obicnom korenu (obicni koren se naziva jos 'kvadratni' koren ili 'drugi' koren).
 n-ti koren broja x se obelezava tako sto se iznad 'korena' standardnog simbola korena stavi broj n.
 
 Primer: treci koren broja 8 je 2 jer je 8=2^3, cetvrti koren broja 625 je 5 jer je 625=5^4.
