@@ -2,7 +2,7 @@
 
 /* O prodajnom i kupovnom kursu
 
-Ako je V i W dve valute (fakticki jedinice merenja),
+Ako su V i W dve valute (fakticki jedinice merenja),
 kupovni kurs valute V prema valuti W oznacavacemo sa kVW,
 a prodajni kurs valute V prema valuti W oznacavacemo sa pVW.
 Po definiciji prodajnog i kupovnog kursa imamo
