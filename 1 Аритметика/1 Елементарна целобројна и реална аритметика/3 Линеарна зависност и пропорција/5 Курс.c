@@ -15,8 +15,8 @@ kVW W -> 1 V, tj. 1 W -> (1/kVW) V, tj. x W -> (x/kVW) V
 Primetimo da vazi:
 (1 V -> pVW W) i (1 V -> (1/kWV) W)
 odakle zagljucujemo da je pVW=1/kWV, tj. pVW*kWV=1, tj. kWV=1/pVW
-Ovim zakljucujemo da sve mozemo izraziti samo sa prodajnim kursom,
-naime kupovni kurs valute V prema W je reciprocan prodajnom kursu valute W prema V.
+Ovim zakljucujemo da sve mozemo izraziti samo sa prodajnim kursom.
+Naime, kupovni kurs valute V prema W je reciprocan prodajnom kursu valute W prema V.
 */
 
 /*O ZADATKU
