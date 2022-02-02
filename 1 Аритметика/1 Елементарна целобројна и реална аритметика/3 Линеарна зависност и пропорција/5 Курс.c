@@ -31,7 +31,7 @@ kV3V2=1/pV2V3 i kV2V3=1/pV3V2.
 1 V3 -> pV3V1 V1 -> pV3V1*pV1V2 V2
 pa je pV3V2=pV3V1*pV1V2=pV3V1/kV2V1
 
-slicno dobijamo da je pV2V3=pV2V1/kV3V1
+Slicno dobijamo da je pV2V3=pV2V1/kV3V1
 */
 
 int main(){
