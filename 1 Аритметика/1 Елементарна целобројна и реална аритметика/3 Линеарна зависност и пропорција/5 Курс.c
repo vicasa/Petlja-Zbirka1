@@ -10,7 +10,7 @@ Po definiciji prodajnog i kupovnog kursa imamo
 1 V -> pVW W, tj. x V -> x*pVW W
 kVW W -> 1 V, tj. 1 W -> (1/kVW) V, tj. x W -> (x/kVW) V
 
-(levo od strelice je sa cime sam usao u  menjacnicu, a desno je sa cime sam izasao)
+(levo od strelice je sa cime ulazimo u  menjacnicu, a desno je sa cime izlazimo)
 
 Primetimo da vazi:
 (1 V -> pVW W) i (1 V -> (1/kWV) W)
