@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 /* O prodajnom i kupovnom kursu
+
 Ako je V i W dve valute (fakticki jedinice merenja),
 kupovni kurs valute V prema valuti W oznacavacemo sa kVW,
 a prodajni kurs valute V prema valuti W oznacavacemo sa pVW.
@@ -19,6 +20,7 @@ naime kupovni kurs valute V prema W je reciprocan prodajnom kursu valute W prema
 */
 
 /*O ZADATKU
+
 Oznacimo sa V1 valutu dinar, sa V2 evro i sa V3 dolar.
 Sa ulaza se cita redom kV2V1, pV2V1, kV3V1, pV3V1.
 Na izlaz treba ispisati redom kV3V2, pV3V2, kV2V3, pV2V3.
