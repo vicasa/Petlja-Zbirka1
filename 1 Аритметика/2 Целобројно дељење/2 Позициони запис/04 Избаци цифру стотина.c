@@ -5,7 +5,7 @@ int main() {
   scanf("%u", &n);
   /*
   Ako je dekadni zapis broja n jednak ...dcba,
-  onda cemo tj zapis razdvojiti na ...dc i ba,
+  onda cemo taj zapis razdvojiti na ...dc i ba,
   prvi broj cemo staviti u promenljivu l, a drugi u promenljivu r.
   Zatim cemo iz l izbaciti cifru c, a onda cemo spojiti l i r i dobiti ...dba
   */
