@@ -2,7 +2,7 @@
 
 /*
 kazaljke ce se poklopiti ako zaklapaju isti orjentisani ugao sa smerom 12 (ovaj ugao nazivamo direkcioni ugao kazaljke)
-ako pretpostavimo da se kazaljke pomeraju kontinualno i ravnomernom brzinom kazaljke ce se poklopiti
+ako pretpostavimo da se kazaljke pomeraju kontinualno i ravnomernom brzinom, kazaljke ce se poklopiti
 medjutim to poklapanje nece biti nakon celog broja sekundi (izuzev poklapanja na 12)
 */
 /*
