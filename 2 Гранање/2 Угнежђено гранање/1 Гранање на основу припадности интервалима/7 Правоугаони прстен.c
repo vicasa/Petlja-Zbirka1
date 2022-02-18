@@ -9,7 +9,7 @@ int u_pravougaoniku(int x, int y, int x0, int y0, int w, int h){
 int main(){
   int x, y, x0, y0, w, h;
   scanf("%i %i %i %i %i %i", &x, &y, &x0, &y0, &w, &h);
-  if(u_pravougaoniku(x, y, x0 + 5, y0 + 5, w - 10, h -10)) printf("UNUTRA\n");
+  if(u_pravougaoniku(x, y, x0 + 5, y0 + 5, w - 10, h - 10)) printf("UNUTRA\n");
   else
   	if(u_pravougaoniku(x, y, x0 - 6, y0 - 6, w + 12, h + 12)) printf("NA IVICI\n");
   	else printf("SPOLJA\n");
