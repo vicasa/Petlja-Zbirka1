@@ -15,8 +15,8 @@ int duzPozDeoInt(int a, int b){
 
 int main()
 {
-    int x1, y1, x2, y2;
-    scanf("%i %i %i %i", &x1, &y1, &x2, &y2);
-    printf("%i\n", duzPozDeoInt(x1, x2)*duzPozDeoInt(y1, y2));
-    return 0;
+	int x1, y1, x2, y2;
+  scanf("%i %i %i %i", &x1, &y1, &x2, &y2);
+  printf("%i\n", duzPozDeoInt(x1, x2)*duzPozDeoInt(y1, y2));
+  return 0;
 }
