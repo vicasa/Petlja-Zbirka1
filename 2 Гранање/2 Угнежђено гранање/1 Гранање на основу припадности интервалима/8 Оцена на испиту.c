@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-int main() {
+int main(){
   unsigned p, o;
   scanf("%u", &p);
   if(p<51) o=5;
