@@ -8,7 +8,7 @@ int main(){
   else
   	if(p<61) o=6;
   	else
-			if(p<71) o=7;
+		if(p<71) o=7;
   		else
   			if(p<81) o=8;
   			else
