@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<math.h>
 
 double put(double t_start, double v, double t){
 	return t>t_start ? (t-t_start)*v : 0;
