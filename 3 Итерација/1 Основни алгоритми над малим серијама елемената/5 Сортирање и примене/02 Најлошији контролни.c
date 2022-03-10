@@ -4,9 +4,10 @@ int main(){
 	/*
 	poenta lekcije sortiranje je da se koriste nizovi,
 	a onda i ugradjene funkcije za sortiranje nizova;
-	stoga se i ovoj lekciji ponovljaju programi od ranije,
-	kako bi se resili pomocu sortiranja nizova,
-	ja to necu raditi, pa cu zbog toga prosto kopirati kod od ranije
+	stoga se u ovoj lekciji ponovljaju programi od ranije,
+	kako bi se resavali pomocu sortiranja nizova;
+	ja to necu raditi, pa cu zbog toga prosto kopirati kod od ranije,
+	kada sortiranje realno nije potrebno
 	*/
 	int ocena;
 	
