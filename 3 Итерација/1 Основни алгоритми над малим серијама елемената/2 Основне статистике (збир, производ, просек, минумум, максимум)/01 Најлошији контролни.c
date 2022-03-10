@@ -2,7 +2,7 @@
 
 int main(){
 	/*iako bi lakse bilo da se koristi 5 promenljivih za 5 ocena
-	ideja je da se zbog generalizacije algoritma (koji se moze implementirati za "bilo koji broj pomocu petlji")
+	ideja je da se zbog generalizacije algoritma (koji se moze implementirati za "bilo koji" broj ocena pomocu petlji)
 	to uradi samo sa jednom promenljivom*/
 	int ocena;
 	
