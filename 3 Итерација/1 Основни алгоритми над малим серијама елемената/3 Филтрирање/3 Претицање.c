@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-double pretek(double tA, double vA, double tB, double vB){/*funkcija vrac dobru vrednost ako tA < tB*/
+double pretek(double tA, double vA, double tB, double vB){/*funkcija vraca dobru vrednost ako tA < tB*/
 	return vB>vA ? (tB*vB - tA*vA)/(vB-vA) : 0;
 }
 
