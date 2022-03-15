@@ -1,17 +1,25 @@
 #include <stdio.h>
-/*kopija koda iz 1 Аритметика/2 Целобројно дељење/2 Позициони запис*/
+
+
 int main() {
-  unsigned h,m,s,s_od_ponoci, s_do_ponoci, m_do_ponoci, h_do_ponoci;
-  scanf("%u %u %u", &h, &m, &s);
-  s_od_ponoci=(h*60+m)*60 +s;
-  printf("%u\n", s_od_ponoci);
-  s_do_ponoci = 24*60*60 - s_od_ponoci; /*ukupno sekundi do ponoci*/
-  m_do_ponoci = s_do_ponoci/60; /*ukupno celih minuta do ponoci*/
-  h_do_ponoci = m_do_ponoci/60; /*ukupno celih sati do ponoci*/
-  printf("%u:%u:%u\n", h_do_ponoci, m_do_ponoci%60, s_do_ponoci%60); 
-  /*
-  m_do_ponoci%60 su oni minuti do ponoci koji nisu pretvoreni u sati,
-  s_do_ponoci%60 su one sekunde do ponoci koje nisu pretvorene u minute
-   */
+  unsigned tmp, ukupno=0;
+
+  scanf("%u", &tmp); /*ucitavamo broj sati*/
+  ukupno += tmp; /*ukupno sati*/
+
+  scanf("%u", &tmp); /*ucitavamo broj minuta*/
+  ukupno *= 60; /*pretvaramo sate u minute*/
+  ukupno += tmp; /*ukupno minuta*/
+
+  scanf("%u", &tmp); /*ucitavamo broj sekundi*/
+  ukupno *= 60; /*pretvaramo minute u sekunde*/
+  ukupno += tmp; /*ukupno sekundi*/
+
+  printf("%u\n", ukupno);
+
+  ukupno = 24*60*60 - ukupno; /*broj sekundi koji je ostao do kraja dana*/
+
+  unsigned m = ukupno/60;
+  printf("%u:%u:%u\n", m/60, m%60, ukupno%60);
   return 0;
 }
