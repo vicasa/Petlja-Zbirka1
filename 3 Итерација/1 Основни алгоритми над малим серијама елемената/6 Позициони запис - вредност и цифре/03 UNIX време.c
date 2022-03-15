@@ -1,10 +1,11 @@
 #include <stdio.h>
-
-
+/*forisranje iterativne forme*/
 int main() {
   unsigned tmp, ukupno=0, k;
 
   scanf("%u", &tmp); /*ucitavamo broj dana*/
+  k=1;
+  ukupno *= k;
   ukupno += tmp; /*ukupno dana*/
 
   scanf("%u", &tmp); /*ucitavamo broj sati*/
