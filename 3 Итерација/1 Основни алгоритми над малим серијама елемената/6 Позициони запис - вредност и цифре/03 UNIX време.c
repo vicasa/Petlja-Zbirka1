@@ -8,20 +8,24 @@ int main() {
   ukupno += tmp; /*ukupno dana*/
 
   scanf("%u", &tmp); /*ucitavamo broj sati*/
-  ukupno *= 24; /*pretvaramo dane u sate*/
+  k=24;
+  ukupno *= k; /*pretvaramo dane u sate*/
   ukupno += tmp; /*ukupno sati*/
 
   scanf("%u", &tmp); /*ucitavamo broj minuta*/
-  ukupno *= 60; /*pretvaramo sate u minute*/
+  k=60;
+  ukupno *= k; /*pretvaramo sate u minute*/
   ukupno += tmp; /*ukupno minuta*/
 
   scanf("%u", &tmp); /*ucitavamo broj sekundi*/
-  ukupno *= 60; /*pretvaramo minute u sekunde*/
+  k=60;
+  ukupno *= k; /*pretvaramo minute u sekunde*/
   ukupno += tmp; /*ukupno sekundi*/
 
 
   scanf("%u", &tmp); /*ucitavamo broj milisekundi*/
-  ukupno *= 1000; /*pretvaramo sekunde u milisekunde*/
+  k=1000;
+  ukupno *= k; /*pretvaramo sekunde u milisekunde*/
   ukupno += tmp; /*ukupno milisekundi*/
 
   scanf("%u", &tmp); /*ucitavamo trajanje pesme u milisekundama*/
