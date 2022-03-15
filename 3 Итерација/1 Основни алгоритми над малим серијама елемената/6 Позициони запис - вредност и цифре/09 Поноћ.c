@@ -17,9 +17,9 @@ int main() {
 
   printf("%u\n", ukupno);
 
-  ukupno = 24*60*60 - ukupno; /*broj sekundi koji je ostao do kraja dana*/
+  ukupno = 24*60*60 - ukupno; /*broj sekundi koje su ostale do kraja dana*/
 
-  unsigned m = ukupno/60;
-  printf("%u:%u:%u\n", m/60, m%60, ukupno%60);
+  tmp = ukupno/60; /*ukupan broj celih minuta koje su ostale do ponoci*/
+  printf("%u:%u:%u\n", tmp/60, tmp%60, ukupno%60);
   return 0;
 }
