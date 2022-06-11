@@ -30,7 +30,7 @@ int izbaci(char s[], int lp){
 
 int main(){
 	char s[500000];
-	scanf("%s", s);
+	gets(s);
 	char reci[100000][11];
 	int br_reci=0;
 	while(scanf("%s", reci[br_reci])!=-1)
