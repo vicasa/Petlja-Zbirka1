@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<string.h>
 
-/*proverava da li niska s pocinje niskom p duzine lp. vraca 1 ako jeste, 0 ako nije.
-Funkcija pouzdano radi ako je niska p nije duza od niske s.*/
+/*proverava da li niska s pocinje niskom p (duzine lp). vraca 1 ako pocinje, 0 u suprotnom.
+Funkcija pouzdano radi ako niska p nije duza od niske s.*/
 int prefiks(char s[], char p[], int lp){
 	for(int i=0; i<lp; i++)
 		if(s[i]!=p[i]) return 0;
 	return 1;
 }
 
-/*proverava da li je niska p duzine lp podniska niske s. Ako p jeste podniska niske s, funcija vraca prvi indeks niske s od kog pocinje podniska p, u suprotnom vraca -1. */
+/*proverava da li je niska p (duzine lp) podniska niske s. Ako p jeste podniska niske s, funcija vraca prvi indeks niske s od kog pocinje podniska p, u suprotnom vraca -1. */
 int podniska(char s[], char p[], int lp){
 	int ls=strlen(s);
 	for(int i=0; i<=ls-lp; i++)
