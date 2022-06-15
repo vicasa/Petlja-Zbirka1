@@ -1,24 +1,30 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#define MAX_LENGTH 225
+
+int maloSlovo(char c) { return c >= 'a' && c <= 'z'; }
+
+void podeliNaReci(const char *recenica) {
+    const char *slovo = recenica;
+
+    while(1) {
+        while (maloSlovo(*slovo)) {
+            printf("%c", *slovo);
+            ++slovo;
+        }
+
+        if (*slovo == 0) break; // *slovo = 0 --> kraj recenice
+        ++slovo; // preskace razmak
+
+        printf("\n"); // novi red, ocekuje se nova rec
+    }
+}
 
 int main(){
-	char s[500000], t[500000];
-	gets(s);
-	int is=0, it=0;
-	/*pretpostavka je da s ne pocinje niti se zavrsava razmakom*/
-	t[0]=s[0];
-	while(s[is]!=0)
-		if(s[is] == ' '){
-			t[it]=0;
-			puts(t);
-			it=0;
-			is++;
-		}
-		else{
-			t[it]=s[is];
-			it++;
-			is++;
-		}
-	t[it]=0;
-	puts(t);
+	char recenica[MAX_LENGTH];
+	gets(recenica); // ucitaj recenicu sa standardnog ulaza
+
+	podeliNaReci(recenica);
+
+	return 0;
 }
