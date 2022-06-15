@@ -12,13 +12,13 @@ void stampajReci(const char *recenica) {
 
     while(1) {
         slovoReci = rec;
-        while (maloSlovo(*slovo)) {
+        while (maloSlovo(*slovo)) { // izdvaja rec
             *slovoReci = *slovo;
             ++slovo, ++slovoReci;
         }
         *slovoReci = '\0';
 
-        puts(rec);
+        puts(rec); // stampa izdvojenu rec
 
         if (*slovo == 0) break; // *slovo = 0 --> kraj recenice
         ++slovo; // preskace razmak
