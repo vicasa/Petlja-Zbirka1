@@ -1,24 +1,35 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#include <string.h>
+#define MAX_LENGTH 225
+
+int maloSlovo(char c) { return c >= 'a' && c <= 'z'; }
+
+void stampajReci(const char *recenica) {
+    const char *slovo = recenica;
+
+    char rec[MAX_LENGTH];
+    char *slovoReci;
+
+    while(1) {
+        slovoReci = rec;
+        while (maloSlovo(*slovo)) { // izdvaja rec
+            *slovoReci = *slovo;
+            ++slovo, ++slovoReci;
+        }
+        *slovoReci = '\0';
+
+        puts(rec); // stampa izdvojenu rec
+
+        if (*slovo == 0) break; // *slovo = 0 --> kraj recenice
+        ++slovo; // preskace razmak
+    }
+}
 
 int main(){
-	char s[500000], t[500000];
-	gets(s);
-	int is=0, it=0;
-	/*pretpostavka je da s ne pocinje niti se zavrsava razmakom*/
-	t[0]=s[0];
-	while(s[is]!=0)
-		if(s[is] == ' '){
-			t[it]=0;
-			puts(t);
-			it=0;
-			is++;
-		}
-		else{
-			t[it]=s[is];
-			it++;
-			is++;
-		}
-	t[it]=0;
-	puts(t);
+	char recenica[MAX_LENGTH];
+	gets(recenica); // ucitaj recenicu sa standardnog ulaza
+
+	stampajReci(recenica);
+
+	return 0;
 }
