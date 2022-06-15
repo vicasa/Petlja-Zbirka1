@@ -4,19 +4,20 @@
 
 int maloSlovo(char c) { return c >= 'a' && c <= 'z'; }
 
-void podeliNaReci(const char *recenica) {
+void stampajReci(const char *recenica) {
     const char *slovo = recenica;
+    char rec[MAX_LENGTH];
+    char *slovoReci = rec;
 
     while(1) {
         while (maloSlovo(*slovo)) {
-            printf("%c", *slovo);
-            ++slovo;
+            *slovoReci = *slovo;
+            ++slovo, ++slovoReci;
         }
+        puts(rec);
 
         if (*slovo == 0) break; // *slovo = 0 --> kraj recenice
         ++slovo; // preskace razmak
-
-        printf("\n"); // novi red, ocekuje se nova rec
     }
 }
 
@@ -24,7 +25,7 @@ int main(){
 	char recenica[MAX_LENGTH];
 	gets(recenica); // ucitaj recenicu sa standardnog ulaza
 
-	podeliNaReci(recenica);
+	stampajReci(recenica);
 
 	return 0;
 }
